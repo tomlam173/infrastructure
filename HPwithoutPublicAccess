@@ -1,0 +1,20 @@
+{
+"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+"contentVersion": "1.0.0.0",
+"parameters": {},
+"variables": {},
+"resources": [
+{
+"type": "Microsoft.DesktopVirtualization/hostpools",
+"apiVersion": "2024-04-03",
+"name": "AVD1-Host-Pool",
+"location": "westeurope",
+"properties": {
+"hostPoolType": "Pooled",
+"loadBalancerType": "BreadthFirst",
+"preferredAppGroupType": "Desktop",
+"publicNetworkAccess": "Disabled"
+}
+}
+]
+}
